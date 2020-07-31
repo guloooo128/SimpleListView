@@ -51,8 +51,8 @@ extension DataSource {
             let rect = CGRect(
                 x: 0,
                 y: self.headerHeight,
-                width:  self.bounds.width,
-                height:  self.bounds.height - self.headerHeight)
+                width: self.bounds.width,
+                height: self.bounds.height - self.headerHeight)
             
             if self.placeHolder.frame != rect {
                 self.placeHolder.frame = rect
