@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		83F5794024D3F4090058788F /* SimpleListView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83F5793624D3F4090058788F /* SimpleListView.framework */; };
-		83F5794524D3F4090058788F /* SimpleListViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83F5794424D3F4090058788F /* SimpleListViewTests.swift */; };
 		83F5794724D3F4090058788F /* SimpleListView.h in Headers */ = {isa = PBXBuildFile; fileRef = 83F5793924D3F4090058788F /* SimpleListView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		83F5797624D3F4FC0058788F /* CellDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83F5796F24D3F4FC0058788F /* CellDataSource.swift */; };
 		83F5797724D3F4FC0058788F /* CollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83F5797024D3F4FC0058788F /* CollectionView.swift */; };
@@ -19,23 +17,10 @@
 		83F5797E24D4017D0058788F /* DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83F5797D24D4017D0058788F /* DataSource.swift */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		83F5794124D3F4090058788F /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 83F5792D24D3F4090058788F /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 83F5793524D3F4090058788F;
-			remoteInfo = SimpleListView;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
 		83F5793624D3F4090058788F /* SimpleListView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SimpleListView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		83F5793924D3F4090058788F /* SimpleListView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SimpleListView.h; sourceTree = "<group>"; };
 		83F5793A24D3F4090058788F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		83F5793F24D3F4090058788F /* SimpleListViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SimpleListViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		83F5794424D3F4090058788F /* SimpleListViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleListViewTests.swift; sourceTree = "<group>"; };
-		83F5794624D3F4090058788F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		83F5796F24D3F4FC0058788F /* CellDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CellDataSource.swift; sourceTree = "<group>"; };
 		83F5797024D3F4FC0058788F /* CollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionView.swift; sourceTree = "<group>"; };
 		83F5797124D3F4FC0058788F /* Config.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
@@ -53,14 +38,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		83F5793C24D3F4090058788F /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				83F5794024D3F4090058788F /* SimpleListView.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -68,7 +45,6 @@
 			isa = PBXGroup;
 			children = (
 				83F5793824D3F4090058788F /* SimpleListView */,
-				83F5794324D3F4090058788F /* SimpleListViewTests */,
 				83F5793724D3F4090058788F /* Products */,
 			);
 			sourceTree = "<group>";
@@ -77,7 +53,6 @@
 			isa = PBXGroup;
 			children = (
 				83F5793624D3F4090058788F /* SimpleListView.framework */,
-				83F5793F24D3F4090058788F /* SimpleListViewTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -90,15 +65,6 @@
 				83F5796E24D3F4FC0058788F /* ListView */,
 			);
 			path = SimpleListView;
-			sourceTree = "<group>";
-		};
-		83F5794324D3F4090058788F /* SimpleListViewTests */ = {
-			isa = PBXGroup;
-			children = (
-				83F5794424D3F4090058788F /* SimpleListViewTests.swift */,
-				83F5794624D3F4090058788F /* Info.plist */,
-			);
-			path = SimpleListViewTests;
 			sourceTree = "<group>";
 		};
 		83F5796E24D3F4FC0058788F /* ListView */ = {
@@ -147,24 +113,6 @@
 			productReference = 83F5793624D3F4090058788F /* SimpleListView.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		83F5793E24D3F4090058788F /* SimpleListViewTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 83F5794D24D3F4090058788F /* Build configuration list for PBXNativeTarget "SimpleListViewTests" */;
-			buildPhases = (
-				83F5793B24D3F4090058788F /* Sources */,
-				83F5793C24D3F4090058788F /* Frameworks */,
-				83F5793D24D3F4090058788F /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				83F5794224D3F4090058788F /* PBXTargetDependency */,
-			);
-			name = SimpleListViewTests;
-			productName = SimpleListViewTests;
-			productReference = 83F5793F24D3F4090058788F /* SimpleListViewTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -176,9 +124,6 @@
 				ORGANIZATIONNAME = Gollum;
 				TargetAttributes = {
 					83F5793524D3F4090058788F = {
-						CreatedOnToolsVersion = 11.6;
-					};
-					83F5793E24D3F4090058788F = {
 						CreatedOnToolsVersion = 11.6;
 					};
 				};
@@ -197,20 +142,12 @@
 			projectRoot = "";
 			targets = (
 				83F5793524D3F4090058788F /* SimpleListView */,
-				83F5793E24D3F4090058788F /* SimpleListViewTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		83F5793424D3F4090058788F /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		83F5793D24D3F4090058788F /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -234,23 +171,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		83F5793B24D3F4090058788F /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				83F5794524D3F4090058788F /* SimpleListViewTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		83F5794224D3F4090058788F /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 83F5793524D3F4090058788F /* SimpleListView */;
-			targetProxy = 83F5794124D3F4090058788F /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		83F5794824D3F4090058788F /* Debug */ = {
@@ -429,44 +350,6 @@
 			};
 			name = Release;
 		};
-		83F5794E24D3F4090058788F /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 8FK6JH46MT;
-				INFOPLIST_FILE = SimpleListViewTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.guloooo128.SimpleListViewTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		83F5794F24D3F4090058788F /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 8FK6JH46MT;
-				INFOPLIST_FILE = SimpleListViewTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.guloooo128.SimpleListViewTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -484,15 +367,6 @@
 			buildConfigurations = (
 				83F5794B24D3F4090058788F /* Debug */,
 				83F5794C24D3F4090058788F /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		83F5794D24D3F4090058788F /* Build configuration list for PBXNativeTarget "SimpleListViewTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				83F5794E24D3F4090058788F /* Debug */,
-				83F5794F24D3F4090058788F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

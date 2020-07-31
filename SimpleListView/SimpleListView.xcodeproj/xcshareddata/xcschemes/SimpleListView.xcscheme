@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "8320AF7924D2A6C100A32EE7"
-               BuildableName = "SimpleListView-Example.app"
-               BlueprintName = "SimpleListView-Example"
-               ReferencedContainer = "container:SimpleListView-Example.xcodeproj">
+               BlueprintIdentifier = "83F5793524D3F4090058788F"
+               BuildableName = "SimpleListView.framework"
+               BlueprintName = "SimpleListView"
+               ReferencedContainer = "container:SimpleListView.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -40,16 +40,6 @@
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "8320AF7924D2A6C100A32EE7"
-            BuildableName = "SimpleListView-Example.app"
-            BlueprintName = "SimpleListView-Example"
-            ReferencedContainer = "container:SimpleListView-Example.xcodeproj">
-         </BuildableReference>
-      </BuildableProductRunnable>
    </LaunchAction>
    <ProfileAction
       buildConfiguration = "Release"
@@ -57,16 +47,15 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
+      <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "8320AF7924D2A6C100A32EE7"
-            BuildableName = "SimpleListView-Example.app"
-            BlueprintName = "SimpleListView-Example"
-            ReferencedContainer = "container:SimpleListView-Example.xcodeproj">
+            BlueprintIdentifier = "83F5793524D3F4090058788F"
+            BuildableName = "SimpleListView.framework"
+            BlueprintName = "SimpleListView"
+            ReferencedContainer = "container:SimpleListView.xcodeproj">
          </BuildableReference>
-      </BuildableProductRunnable>
+      </MacroExpansion>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">
