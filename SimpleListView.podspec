@@ -31,7 +31,7 @@ Pod::Spec.new do |s|
 
   s.ios.deployment_target = '9.0'
 
-  s.source_files = 'SimpleListView/**/*'
+  s.source_files = 'SimpleListView/SimpleListView/SimpleListView/**/*'
   
   # s.resource_bundles = {
   #   'SimpleListView' => ['SimpleListView/Assets/*.png']
