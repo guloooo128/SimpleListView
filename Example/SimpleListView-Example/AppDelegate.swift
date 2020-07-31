@@ -18,7 +18,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         let blankView = UIView()
         blankView.backgroundColor = UIColor.systemPink
-        Config.shared.noResultView = blankView
+        Config.shared.blankView = blankView
         
         let noConnectionView = UIView()
         noConnectionView.backgroundColor = UIColor.systemTeal

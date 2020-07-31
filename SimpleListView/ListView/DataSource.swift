@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-internal protocol DataSource where Self: UIView {
+internal protocol DataSource where Self: UIScrollView {
     
     var dataList: [[CellData]]? { set get }
     
@@ -51,8 +51,8 @@ extension DataSource {
             let rect = CGRect(
                 x: 0,
                 y: self.headerHeight,
-                width: bounds.width,
-                height: bounds.height - self.headerHeight)
+                width: self.bounds.width,
+                height: self.bounds.height - self.headerHeight)
             
             if self.placeHolder.frame != rect {
                 self.placeHolder.frame = rect
