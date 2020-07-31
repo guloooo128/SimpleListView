@@ -21,11 +21,15 @@ class TableViewVC: UIViewController {
         super.viewDidLoad()
         
         if let dataSource = dataSource {
-            tableView.dataList = [dataSource.map({CellData(model: $0, reuseIdentifier: reuseIdentifier)})]
+            tableView.dataList = [dataSource.map({CellData(model: TableViewVM(text: $0, iconCallback: didTapIcon), reuseIdentifier: reuseIdentifier)})]
             tableView.reloadData()
         } else {
             tableView.placeHolder.type = .blank
             tableView.reloadData()
         }
+    }
+    
+    func didTapIcon(_ text: String) {
+        print(text)
     }
 }

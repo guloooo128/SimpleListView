@@ -18,5 +18,4 @@ class MainTableViewCell: UITableViewCell, CellDataSource {
             textLabel?.text = model
         }
     }
-
 }

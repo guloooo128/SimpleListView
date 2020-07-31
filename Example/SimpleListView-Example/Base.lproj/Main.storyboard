@@ -94,7 +94,7 @@
                                 <rect key="frame" x="0.0" y="88" width="414" height="808"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="TableViewCell" id="oAz-Zz-mF0">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="TableViewCell" id="oAz-Zz-mF0" customClass="TableViewCell" customModule="SimpleListView_Example" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="414" height="80.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="oAz-Zz-mF0" id="JeZ-mv-ZqP">
@@ -106,9 +106,22 @@
                                                     <subviews>
                                                         <view contentMode="scaleToFill" horizontalHuggingPriority="252" verticalHuggingPriority="252" horizontalCompressionResistancePriority="752" verticalCompressionResistancePriority="752" translatesAutoresizingMaskIntoConstraints="NO" id="rAE-81-enc">
                                                             <rect key="frame" x="0.0" y="5.5" width="40" height="40"/>
+                                                            <subviews>
+                                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BNQ-sJ-cyC">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
+                                                                    <state key="normal" title="Icon"/>
+                                                                    <connections>
+                                                                        <action selector="iconAction:" destination="oAz-Zz-mF0" eventType="touchUpInside" id="HyQ-l6-S2e"/>
+                                                                    </connections>
+                                                                </button>
+                                                            </subviews>
                                                             <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                             <constraints>
+                                                                <constraint firstItem="BNQ-sJ-cyC" firstAttribute="leading" secondItem="rAE-81-enc" secondAttribute="leading" id="4uk-qR-UBh"/>
                                                                 <constraint firstAttribute="width" constant="40" id="7Dn-Cx-AmV"/>
+                                                                <constraint firstAttribute="trailing" secondItem="BNQ-sJ-cyC" secondAttribute="trailing" id="HUq-jm-b8S"/>
+                                                                <constraint firstItem="BNQ-sJ-cyC" firstAttribute="top" secondItem="rAE-81-enc" secondAttribute="top" id="dYA-FX-OR2"/>
+                                                                <constraint firstAttribute="bottom" secondItem="BNQ-sJ-cyC" secondAttribute="bottom" id="uqz-wB-c8k"/>
                                                                 <constraint firstAttribute="height" constant="40" id="wYM-Yu-JsV"/>
                                                             </constraints>
                                                         </view>

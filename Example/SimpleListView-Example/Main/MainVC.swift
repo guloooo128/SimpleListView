@@ -54,6 +54,10 @@ class MainVC: UIViewController {
             vc.dataSource = (0...10).map({"🌞-\($0)"})
         }
     }
-    
-    
+}
+
+extension MainVC: UITableViewDelegate {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+    }
 }
