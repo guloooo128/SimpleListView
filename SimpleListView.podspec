@@ -26,12 +26,14 @@ Pod::Spec.new do |s|
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'guloooo128' => 'guloooo128@gmail.com' }
   s.source           = { :git => 'https://github.com/guloooo128/SimpleListView.git', :tag => s.version.to_s }
-  s.swift_versions   = '5.0'
+ 
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
+  s.swift_versions   = '5.0'
   s.ios.deployment_target = '9.0'
 
-  s.source_files = 'SimpleListView/**/*'
+  s.source_files = 'SimpleListView/**/*.{h,m,swift}'
+  # s.static_framework = true
   
   # s.resource_bundles = {
   #   'SimpleListView' => ['SimpleListView/Assets/*.png']
