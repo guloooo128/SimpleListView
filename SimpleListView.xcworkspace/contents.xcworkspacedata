@@ -2,9 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:Example/SimpleListView-Example.xcodeproj">
+      location = "group:SimpleListView.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:SimpleListView.xcodeproj">
+      location = "group:Example/SimpleListView-Example.xcodeproj">
    </FileRef>
 </Workspace>

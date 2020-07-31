@@ -32,10 +32,8 @@
 /* Begin PBXFileReference section */
 		837CA5E724D29A0700A92A8D /* SimpleListView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SimpleListView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		837CA5EA24D29A0700A92A8D /* SimpleListView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SimpleListView.h; sourceTree = "<group>"; };
-		837CA5EB24D29A0700A92A8D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		837CA5F024D29A0700A92A8D /* SimpleListViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SimpleListViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		837CA5F524D29A0700A92A8D /* SimpleListViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleListViewTests.swift; sourceTree = "<group>"; };
-		837CA5F724D29A0700A92A8D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		837CA60D24D29EBB00A92A8D /* PlaceHolder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaceHolder.swift; sourceTree = "<group>"; };
 		837CA60E24D29EBB00A92A8D /* CellData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CellData.swift; sourceTree = "<group>"; };
 		837CA60F24D29EBB00A92A8D /* CollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionView.swift; sourceTree = "<group>"; };
@@ -86,7 +84,6 @@
 			isa = PBXGroup;
 			children = (
 				837CA5EA24D29A0700A92A8D /* SimpleListView.h */,
-				837CA5EB24D29A0700A92A8D /* Info.plist */,
 				837CA60C24D29EBB00A92A8D /* ListView */,
 			);
 			path = SimpleListView;
