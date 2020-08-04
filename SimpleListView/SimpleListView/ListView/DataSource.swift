@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-internal protocol DataSource where Self: UIScrollView {
+public protocol DataSource where Self: UIScrollView {
     
     var dataList: [[CellData]]? { set get }
     
@@ -22,10 +22,12 @@ internal protocol DataSource where Self: UIScrollView {
     func prepareReloadData()
     
     func updatePlaceHolderFrame()
+    
+    func cellDataForRow(at indexPath: IndexPath) -> CellData?
 }
 
 extension DataSource {
-    internal func configurePlaceHolder() {
+    public func configurePlaceHolder() {
         placeHolder.isHidden = true
         addSubview(placeHolder)
         placeHolder.blankView = Config.shared.blankView
@@ -33,7 +35,7 @@ extension DataSource {
         placeHolder.customView = Config.shared.customView
     }
     
-    internal func prepareReloadData() {
+    public func prepareReloadData() {
         DispatchQueue.main.async {
             if let list = self.dataList, list.count > 0, self.placeHolder.contentView == nil {
                 self.placeHolder.isHidden = true
@@ -45,7 +47,7 @@ extension DataSource {
         }
     }
     
-    internal func updatePlaceHolderFrame() {
+    public func updatePlaceHolderFrame() {
         DispatchQueue.main.async {
             guard !self.placeHolder.isHidden else { return }
             let rect = CGRect(
@@ -59,4 +61,18 @@ extension DataSource {
             }
         }
     }
+    
+    public func cellDataForRow(at indexPath: IndexPath) -> CellData? {
+        guard let list = dataList else { return nil }
+        if list.count > indexPath.section, list[indexPath.section].count > indexPath.row {
+            return list[indexPath.section][indexPath.row]
+        } else {
+            return nil
+        }
+    }
 }
+
+public protocol CellDataSource {
+    var data: CellData? { get set }
+}
+

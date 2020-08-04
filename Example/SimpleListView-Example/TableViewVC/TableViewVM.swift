@@ -8,6 +8,7 @@
 
 import Foundation
 
+import SimpleListView
 
 struct TableViewVM {
     var text: String

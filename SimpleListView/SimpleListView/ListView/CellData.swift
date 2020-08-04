@@ -8,7 +8,7 @@
 
 import Foundation
 
-public struct CellData {
+public class CellData {
 
     public var model: Any
 
@@ -20,5 +20,9 @@ public struct CellData {
         
         self.reuseIdentifier = reuseIdentifier
         
+    }
+    
+    public func myModel<T>() -> T? {
+        return model as? T
     }
 }

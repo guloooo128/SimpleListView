@@ -11,10 +11,10 @@ import SimpleListView
 
 class TableViewCell: UITableViewCell, CellDataSource  {
     
-    var model: Any?
-    
+    var data: CellData?
+
     @IBAction func iconAction(_ sender: Any) {
-        guard let model = model as? TableViewVM else { return }
+        guard let model: TableViewVM = data?.myModel() else { return }
         model.iconCallback(model.text)
     }
     

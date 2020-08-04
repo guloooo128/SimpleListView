@@ -10,7 +10,7 @@ import UIKit
 
 public class CollectionView: UICollectionView, DataSource {
 
-    internal var headerHeight: CGFloat = 0
+    public var headerHeight: CGFloat = 0
     
     public var placeHolder: PlaceHolder = PlaceHolder()
     
@@ -52,7 +52,7 @@ extension CollectionView: UICollectionViewDataSource {
         let cellData = dataList![indexPath.section][indexPath.item]
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellData.reuseIdentifier, for: indexPath)
         if var cell = cell as? CellDataSource {
-            cell.model = cellData.model
+            cell.data = cellData
         }
         return cell
     }

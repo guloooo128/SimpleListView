@@ -10,12 +10,18 @@ import UIKit
 import SimpleListView
 
 class MainTableViewCell: UITableViewCell, CellDataSource {
-    
-    // !Setp 2. Convert data type.
-    var model: Any? {
+    var data: CellData? {
         didSet {
-            guard let model = model as? String else { return }
-            textLabel?.text = model
+            if let model: String = data?.myModel() {
+                textLabel?.text = model
+            }
+//            model
+//            guard let model = model as? String else { return }
+//
         }
     }
+    
+    
+//    // !Setp 2. Convert data type.
+//    var model: Any?
 }

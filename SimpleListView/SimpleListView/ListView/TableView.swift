@@ -11,7 +11,7 @@ import UIKit
 
 open class TableView: UITableView, DataSource {
     
-    internal var headerHeight: CGFloat {
+    public var headerHeight: CGFloat {
         return tableHeaderView?.bounds.height ?? 0
     }
     
@@ -57,7 +57,7 @@ extension TableView: UITableViewDataSource {
         let cellData = dataList![indexPath.section][indexPath.row]
         let cell = tableView.dequeueReusableCell(withIdentifier: cellData.reuseIdentifier, for: indexPath)
         if var cell = cell as? CellDataSource {
-            cell.model = cellData.model
+            cell.data = cellData
         }
         return cell
     }

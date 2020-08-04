@@ -58,6 +58,9 @@ class MainVC: UIViewController {
 
 extension MainVC: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
+        let cellData = self.tableView.cellDataForRow(at: indexPath)!
+        if let title: String = cellData.myModel() {
+            print(title)
+        }        
     }
 }
