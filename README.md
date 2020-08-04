@@ -21,7 +21,7 @@ pod 'SimpleListView'
 
 ## Author
 
-my128s, my128s@sohu.com
+guloooo128, guloooo128@gmail.com
 
 ## License
 
