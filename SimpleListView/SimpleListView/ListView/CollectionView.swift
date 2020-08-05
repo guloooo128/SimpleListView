@@ -8,7 +8,7 @@
 
 import UIKit
 
-public class CollectionView: UICollectionView, DataSource {
+open class CollectionView: UICollectionView, DataSource {
 
     public var headerHeight: CGFloat = 0
     
