@@ -12,6 +12,8 @@ import SimpleListView
 class TableViewCell: UITableViewCell, CellDataSource  {
     
     var data: CellData?
+    
+    var indexPath: IndexPath!
 
     @IBAction func iconAction(_ sender: Any) {
         guard let model: TableViewVM = data?.myModel() else { return }

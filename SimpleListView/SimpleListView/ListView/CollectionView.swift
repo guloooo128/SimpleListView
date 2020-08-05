@@ -52,6 +52,7 @@ extension CollectionView: UICollectionViewDataSource {
         let cellData = dataList![indexPath.section][indexPath.item]
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellData.reuseIdentifier, for: indexPath)
         if var cell = cell as? CellDataSource {
+            cell.indexPath = indexPath
             cell.data = cellData
         }
         return cell

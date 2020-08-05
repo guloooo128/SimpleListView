@@ -73,6 +73,9 @@ extension DataSource {
 }
 
 public protocol CellDataSource {
+    
     var data: CellData? { get set }
+    
+    var indexPath: IndexPath! { get set }
 }
 

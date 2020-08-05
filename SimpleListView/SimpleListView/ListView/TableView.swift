@@ -57,7 +57,8 @@ extension TableView: UITableViewDataSource {
         let cellData = dataList![indexPath.section][indexPath.row]
         let cell = tableView.dequeueReusableCell(withIdentifier: cellData.reuseIdentifier, for: indexPath)
         if var cell = cell as? CellDataSource {
-            cell.data = cellData
+            cell.indexPath = indexPath
+            cell.data = cellData            
         }
         return cell
     }
