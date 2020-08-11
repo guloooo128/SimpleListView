@@ -37,7 +37,9 @@ extension DataSource {
     
     public func prepareReloadData() {
         DispatchQueue.main.async {
-            if let list = self.dataList, list.count > 0, self.placeHolder.contentView == nil {
+            if self.placeHolder.contentView == nil {
+                self.placeHolder.isHidden = true
+            } else if let list = self.dataList, list.count > 0 {
                 self.placeHolder.isHidden = true
             } else {
                 self.placeHolder.isHidden = false
