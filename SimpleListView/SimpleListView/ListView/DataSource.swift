@@ -44,9 +44,25 @@ extension DataSource {
             } else {
                 self.placeHolder.isHidden = false
                 self.placeHolder.updateContentView()
+                self.animate()
                 self.setNeedsLayout()
             }
         }
+    }
+    
+    func animate() {
+        guard let imageView = placeHolder.contentView?.imageView else { return }
+        let rotate = CGAffineTransform(rotationAngle: -0.2)
+        let stretchAndRotate = rotate.scaledBy(x: 0.5, y: 0.5)
+        imageView.transform = stretchAndRotate
+        imageView.alpha = 0.5
+        UIView.animate(withDuration: 1.5, delay: 0, usingSpringWithDamping:  0.45, initialSpringVelocity: 10.0, options:[.curveEaseOut], animations: {
+            imageView.alpha = 1.0
+            let rotate = CGAffineTransform(rotationAngle: 0.0)
+            let stretchAndRotate = rotate.scaledBy(x: 1.0, y: 1.0)
+            imageView.transform = stretchAndRotate
+            
+        }, completion: nil)
     }
     
     public func updatePlaceHolderFrame() {

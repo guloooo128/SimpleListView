@@ -20,6 +20,8 @@ class CollectionViewVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        collectionView.placeHolder.buttonsAction(placeHolderButtonsAction)
+        
         if let dataSource = dataSource {
             collectionView.dataList = [dataSource.map({CellData(model: $0, reuseIdentifier: reuseIdentifier)})]
             collectionView.reloadData()
@@ -27,5 +29,9 @@ class CollectionViewVC: UIViewController {
             collectionView.placeHolder.type = .noConnection
             collectionView.reloadData()
         }
+    }
+    
+    func placeHolderButtonsAction(_ sender: UIButton) {
+        print(sender.tag)
     }
 }

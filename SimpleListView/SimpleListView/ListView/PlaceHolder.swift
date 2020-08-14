@@ -20,17 +20,32 @@ public enum PlaceHolderType {
     
 }
 
+public typealias ButtonsAction = (_ sender: UIButton) -> Void
+
+open class PlaceHolderContentView: UIView {
+    
+    @IBOutlet weak var imageView: UIImageView?
+    
+    var buttonsAction: ButtonsAction?
+    
+    @IBAction func buttionsAction(_ sender: UIButton) {
+        buttonsAction?(sender)
+    }    
+}
+
+
+
 public class PlaceHolder: UIView {
     
     public var type: PlaceHolderType = .none
     
-    public var blankView: UIView?
+    public var blankView: PlaceHolderContentView?
     
-    public var noConnectionView: UIView?
+    public var noConnectionView: PlaceHolderContentView?
     
-    public var customView: UIView?
+    public var customView: PlaceHolderContentView?
     
-    internal var contentView: UIView? {
+    internal var contentView: PlaceHolderContentView? {
         switch type {
         case .blank:
             return blankView
@@ -68,6 +83,12 @@ public class PlaceHolder: UIView {
                 constant: 0)
         })
         addConstraints(constraints)
+    }
+    
+    public func buttonsAction(_ handler: @escaping ButtonsAction) {
+        blankView?.buttonsAction = handler
+        noConnectionView?.buttonsAction = handler
+        customView?.buttonsAction = handler
     }
     
 }

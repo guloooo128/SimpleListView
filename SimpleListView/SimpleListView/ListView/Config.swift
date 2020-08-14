@@ -12,11 +12,11 @@ public class Config {
     
     public static let shared = Config()
     
-    public var blankView: UIView?
+    public var blankView: PlaceHolderContentView?
        
-    public var noConnectionView: UIView?
+    public var noConnectionView: PlaceHolderContentView?
     
-    public var customView: UIView?
+    public var customView: PlaceHolderContentView?
     
     private init() {}
     
