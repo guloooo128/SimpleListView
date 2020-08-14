@@ -11,13 +11,14 @@ import SimpleListView
 
 class TableViewCell: UITableViewCell, CellDataSource  {
     
+//    static let reuseIdentifier = "TableViewCell"
+    
     var data: CellData?
     
     var indexPath: IndexPath!
 
-    @IBAction func iconAction(_ sender: Any) {
-        guard let model: TableViewVM = data?.myModel() else { return }
-        model.iconCallback(model.text)
+    @IBAction func iconAction(_ sender: UIButton) {
+        data?.buttonsAction?(sender, data)
     }
     
     override func setSelected(_ selected: Bool, animated: Bool) {

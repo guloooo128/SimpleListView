@@ -14,71 +14,38 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="Cpw-6W-McP">
-                    <rect key="frame" x="117" y="319" width="180" height="258"/>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="53" translatesAutoresizingMaskIntoConstraints="NO" id="Mip-Mi-9yH">
+                    <rect key="frame" x="118" y="289" width="178" height="318.5"/>
                     <subviews>
-                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" tag="9" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hg_default-no_results" translatesAutoresizingMaskIntoConstraints="NO" id="7d7-fs-LA7">
-                            <rect key="frame" x="1" y="0.0" width="178" height="162"/>
-                            <userDefinedRuntimeAttributes>
-                                <userDefinedRuntimeAttribute type="number" keyPath="duration">
-                                    <real key="value" value="0.59999999999999998"/>
-                                </userDefinedRuntimeAttribute>
-                                <userDefinedRuntimeAttribute type="boolean" keyPath="autoRun" value="NO"/>
-                                <userDefinedRuntimeAttribute type="number" keyPath="delay">
-                                    <real key="value" value="2"/>
-                                </userDefinedRuntimeAttribute>
-                            </userDefinedRuntimeAttributes>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hg_default-no_results" translatesAutoresizingMaskIntoConstraints="NO" id="e6Y-kQ-rYx">
+                            <rect key="frame" x="0.0" y="0.0" width="178" height="162"/>
                         </imageView>
-                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="0fa-z4-i4G">
-                            <rect key="frame" x="0.0" y="192" width="180" height="66"/>
-                            <subviews>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="页面是空的" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nr9-dT-bvq">
-                                    <rect key="frame" x="57" y="0.0" width="66.5" height="16"/>
-                                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
-                                    <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
-                                    <nil key="highlightedColor"/>
-                                </label>
-                                <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K39-m8-zdP">
-                                    <rect key="frame" x="0.0" y="36" width="180" height="30"/>
-                                    <constraints>
-                                        <constraint firstAttribute="height" constant="30" id="Qes-bD-tIC"/>
-                                        <constraint firstAttribute="width" constant="180" id="aZy-q2-zu9"/>
-                                    </constraints>
-                                    <state key="normal" title="刷新">
-                                        <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
-                                    </state>
-                                    <userDefinedRuntimeAttributes>
-                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                            <real key="value" value="15"/>
-                                        </userDefinedRuntimeAttribute>
-                                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                            <color key="value" cocoaTouchSystemColor="darkTextColor"/>
-                                        </userDefinedRuntimeAttribute>
-                                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
-                                            <real key="value" value="0.5"/>
-                                        </userDefinedRuntimeAttribute>
-                                    </userDefinedRuntimeAttributes>
-                                    <connections>
-                                        <action selector="buttionsAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="aqu-Lx-Cz9"/>
-                                    </connections>
-                                </button>
-                            </subviews>
-                        </stackView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qj5-aE-fWI">
+                            <rect key="frame" x="68" y="215" width="42" height="20.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Db-7q-ZKX">
+                            <rect key="frame" x="66" y="288.5" width="46" height="30"/>
+                            <state key="normal" title="Button"/>
+                            <connections>
+                                <action selector="buttionsAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="B8f-4a-16s"/>
+                            </connections>
+                        </button>
                     </subviews>
                 </stackView>
             </subviews>
             <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
             <constraints>
-                <constraint firstItem="Cpw-6W-McP" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="Dn2-rx-eic"/>
-                <constraint firstItem="Cpw-6W-McP" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="l9J-eh-SPz"/>
+                <constraint firstItem="Mip-Mi-9yH" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="5hk-Q5-xn5"/>
+                <constraint firstItem="Mip-Mi-9yH" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="o1y-M7-0k3"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <connections>
-                <outlet property="button" destination="K39-m8-zdP" id="1fL-Bx-Kbh"/>
-                <outlet property="imageView" destination="7d7-fs-LA7" id="OD5-jB-Jco"/>
-                <outlet property="textLabel" destination="Nr9-dT-bvq" id="i8Y-gV-Hse"/>
+                <outlet property="imageView" destination="e6Y-kQ-rYx" id="bbh-jK-BfL"/>
             </connections>
-            <point key="canvasLocation" x="133" y="154"/>
+            <point key="canvasLocation" x="133" y="110"/>
         </view>
     </objects>
     <resources>

@@ -24,9 +24,9 @@ class MainVC: UIViewController {
         // !Setp 1. Set Data List
         tableView.dataList = options.enumerated().map({
             if $0.offset == 0 {
-               return $0.element.map({CellData(model: $0, reuseIdentifier: reuseIdentifier1)})
+                return $0.element.map({CellData(model: $0, reuseIdentifier: reuseIdentifier1, buttonsAction: cellButtonsAction)})
             } else {
-               return $0.element.map({CellData(model: $0, reuseIdentifier: reuseIdentifier2)})
+                return $0.element.map({CellData(model: $0, reuseIdentifier: reuseIdentifier2, buttonsAction: cellButtonsAction)})
             }
         })
         
@@ -38,6 +38,10 @@ class MainVC: UIViewController {
         if let indexPath = tableView.indexPathForSelectedRow {
             tableView.deselectRow(at: indexPath, animated: true)
         }
+    }
+    
+    func cellButtonsAction(_ sender: UIButton, cellData: CellData?) {
+        
     }
     
     

@@ -19,15 +19,6 @@
                     <subviews>
                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" tag="9" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hg_default-no_results" translatesAutoresizingMaskIntoConstraints="NO" id="wj4-cD-hA6">
                             <rect key="frame" x="1" y="0.0" width="178" height="162"/>
-                            <userDefinedRuntimeAttributes>
-                                <userDefinedRuntimeAttribute type="number" keyPath="duration">
-                                    <real key="value" value="0.59999999999999998"/>
-                                </userDefinedRuntimeAttribute>
-                                <userDefinedRuntimeAttribute type="boolean" keyPath="autoRun" value="NO"/>
-                                <userDefinedRuntimeAttribute type="number" keyPath="delay">
-                                    <real key="value" value="2"/>
-                                </userDefinedRuntimeAttribute>
-                            </userDefinedRuntimeAttributes>
                         </imageView>
                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="sOq-Qj-sdr">
                             <rect key="frame" x="0.0" y="192" width="180" height="66"/>
@@ -47,20 +38,6 @@
                                     <state key="normal" title="Reload">
                                         <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                     </state>
-                                    <userDefinedRuntimeAttributes>
-                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                            <real key="value" value="15"/>
-                                        </userDefinedRuntimeAttribute>
-                                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                            <color key="value" cocoaTouchSystemColor="darkTextColor"/>
-                                        </userDefinedRuntimeAttribute>
-                                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
-                                            <real key="value" value="0.5"/>
-                                        </userDefinedRuntimeAttribute>
-                                    </userDefinedRuntimeAttributes>
-                                    <connections>
-                                        <action selector="buttionsAction:" destination="XyV-ae-G84" eventType="touchUpInside" id="sW2-nT-GRx"/>
-                                    </connections>
                                 </button>
                             </subviews>
                         </stackView>
@@ -73,9 +50,6 @@
                 <constraint firstItem="IOJ-U0-XOk" firstAttribute="centerX" secondItem="XyV-ae-G84" secondAttribute="centerX" id="x2S-lK-ude"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="vyv-2z-XWB"/>
-            <connections>
-                <outlet property="imageView" destination="wj4-cD-hA6" id="UxR-PM-Awm"/>
-            </connections>
             <point key="canvasLocation" x="133" y="154"/>
         </view>
     </objects>

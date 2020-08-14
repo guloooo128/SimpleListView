@@ -16,7 +16,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
  
+//        Config.shared.blankView = BlankView.fromXib()
+        
         Config.shared.blankView = BlankView.fromXib()
+        
         Config.shared.noConnectionView = NoConnectionView.fromXib()
         
         return true

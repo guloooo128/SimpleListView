@@ -7,6 +7,9 @@
 //
 
 import Foundation
+import UIKit
+
+public typealias CellButtonsAction = (_ sender: UIButton, _ model: CellData?) -> Void
 
 public class CellData {
 
@@ -14,12 +17,12 @@ public class CellData {
 
     public var reuseIdentifier: String
     
-    public init(model: Any, reuseIdentifier: String) {
-        
+    public var buttonsAction: CellButtonsAction?
+    
+    public init(model: Any, reuseIdentifier: String, buttonsAction: CellButtonsAction? = nil) {
         self.model = model
-        
         self.reuseIdentifier = reuseIdentifier
-        
+        self.buttonsAction = buttonsAction
     }
     
     public func myModel<T>() -> T? {

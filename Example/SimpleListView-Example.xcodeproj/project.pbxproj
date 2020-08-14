@@ -11,9 +11,9 @@
 		8320AF8524D2A6C100A32EE7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8320AF8324D2A6C100A32EE7 /* Main.storyboard */; };
 		8320AF8724D2A6C200A32EE7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8320AF8624D2A6C200A32EE7 /* Assets.xcassets */; };
 		8320AF8A24D2A6C200A32EE7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8320AF8824D2A6C200A32EE7 /* LaunchScreen.storyboard */; };
+		8339F6B824E67A76000EF5E5 /* BlankView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8339F6B724E67A76000EF5E5 /* BlankView.xib */; };
 		8355E18824D4126E005AFD0D /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8355E18724D4126E005AFD0D /* TableViewCell.swift */; };
 		8355E18A24D41405005AFD0D /* TableViewVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8355E18924D41405005AFD0D /* TableViewVM.swift */; };
-		8356CC4024E63F88008B7C20 /* BlankView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8356CC3E24E63F88008B7C20 /* BlankView.xib */; };
 		8356CC4124E63F88008B7C20 /* BlankView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8356CC3F24E63F88008B7C20 /* BlankView.swift */; };
 		8356CC4524E662D5008B7C20 /* NoConnectionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8356CC4424E662D5008B7C20 /* NoConnectionView.xib */; };
 		8356CC4724E662DF008B7C20 /* NoConnectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8356CC4624E662DF008B7C20 /* NoConnectionView.swift */; };
@@ -31,9 +31,9 @@
 		8320AF8624D2A6C200A32EE7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8320AF8924D2A6C200A32EE7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8320AF8B24D2A6C200A32EE7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8339F6B724E67A76000EF5E5 /* BlankView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BlankView.xib; sourceTree = "<group>"; };
 		8355E18724D4126E005AFD0D /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		8355E18924D41405005AFD0D /* TableViewVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewVM.swift; sourceTree = "<group>"; };
-		8356CC3E24E63F88008B7C20 /* BlankView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BlankView.xib; sourceTree = "<group>"; };
 		8356CC3F24E63F88008B7C20 /* BlankView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlankView.swift; sourceTree = "<group>"; };
 		8356CC4424E662D5008B7C20 /* NoConnectionView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NoConnectionView.xib; sourceTree = "<group>"; };
 		8356CC4624E662DF008B7C20 /* NoConnectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoConnectionView.swift; sourceTree = "<group>"; };
@@ -111,7 +111,7 @@
 				8355E18724D4126E005AFD0D /* TableViewCell.swift */,
 				8355E18924D41405005AFD0D /* TableViewVM.swift */,
 				8356CC3F24E63F88008B7C20 /* BlankView.swift */,
-				8356CC3E24E63F88008B7C20 /* BlankView.xib */,
+				8339F6B724E67A76000EF5E5 /* BlankView.xib */,
 				8356CC4624E662DF008B7C20 /* NoConnectionView.swift */,
 				8356CC4424E662D5008B7C20 /* NoConnectionView.xib */,
 			);
@@ -184,9 +184,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8339F6B824E67A76000EF5E5 /* BlankView.xib in Resources */,
 				8356CC4524E662D5008B7C20 /* NoConnectionView.xib in Resources */,
 				8320AF8A24D2A6C200A32EE7 /* LaunchScreen.storyboard in Resources */,
-				8356CC4024E63F88008B7C20 /* BlankView.xib in Resources */,
 				8320AF8724D2A6C200A32EE7 /* Assets.xcassets in Resources */,
 				8320AF8524D2A6C100A32EE7 /* Main.storyboard in Resources */,
 			);

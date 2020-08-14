@@ -23,10 +23,12 @@ class TableViewVC: UIViewController, UITableViewDelegate {
         tableView.placeHolder.buttonsAction(placeHolderButtonsAction)
         
         if let dataSource = dataSource {
-            tableView.dataList = [dataSource.map({CellData(model: TableViewVM(text: $0, iconCallback: didTapIcon), reuseIdentifier: reuseIdentifier)})]
+            tableView.dataList = [dataSource.map({
+                CellData(model: $0, reuseIdentifier: reuseIdentifier, buttonsAction: cellButtonsAction)
+            })]
             tableView.reloadData()
         } else {
-            tableView.placeHolder.type = .noConnection
+            tableView.placeHolder.type = .blank
             tableView.reloadData()
         }
     }
@@ -37,5 +39,10 @@ class TableViewVC: UIViewController, UITableViewDelegate {
     
     func placeHolderButtonsAction(_ sender: UIButton) {
         print(sender.tag)
+    }
+    
+    func cellButtonsAction(_ sender: UIButton, cellData: CellData?) {
+        guard let text: String = cellData?.myModel() else { return }
+        print(text)
     }
 }
