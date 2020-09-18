@@ -8,7 +8,7 @@
 
 import UIKit
 
-open class CollectionView: UICollectionView, DataSource {
+open class SLCollectionView: UICollectionView, DataSource {
 
     public var headerHeight: CGFloat = 0
     
@@ -39,7 +39,7 @@ open class CollectionView: UICollectionView, DataSource {
     }
 }
 
-extension CollectionView: UICollectionViewDataSource {
+extension SLCollectionView: UICollectionViewDataSource {
     public func numberOfSections(in collectionView: UICollectionView) -> Int {
         return dataList?.count ?? 0
     }

@@ -9,7 +9,7 @@
 import UIKit
 import SimpleListView
 
-class MainTableView: TableView {
+class MainTableView: SLTableView {
 
     func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
         return section == 0 ? "Table View" : "Colleciton View"

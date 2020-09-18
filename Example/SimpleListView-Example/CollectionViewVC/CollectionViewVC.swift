@@ -13,7 +13,7 @@ private let reuseIdentifier = "CollectionViewCell"
 
 class CollectionViewVC: UIViewController {
 
-    @IBOutlet weak var collectionView: CollectionView!
+    @IBOutlet weak var collectionView: SLCollectionView!
     
     var dataSource: [String]?
     

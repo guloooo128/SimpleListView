@@ -9,7 +9,7 @@
 import UIKit
 
 
-open class TableView: UITableView, DataSource {
+open class SLTableView: UITableView, DataSource {
     
     public var headerHeight: CGFloat {
         return tableHeaderView?.bounds.height ?? 0
@@ -44,7 +44,7 @@ open class TableView: UITableView, DataSource {
     }
 }
 
-extension TableView: UITableViewDataSource {
+extension SLTableView: UITableViewDataSource {
     public func numberOfSections(in tableView: UITableView) -> Int {
         return dataList?.count ?? 0
     }

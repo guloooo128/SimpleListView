@@ -13,7 +13,7 @@ private let reuseIdentifier = "TableViewCell"
 
 class TableViewVC: UIViewController, UITableViewDelegate {
 
-    @IBOutlet weak var tableView: TableView!
+    @IBOutlet weak var tableView: SLTableView!
     
     var dataSource: [String]?
     
